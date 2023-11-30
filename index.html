@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style> 
+    .div {
+      height: 20px;
+      overflow: hidden;
+    }
+    .heloo {
+      width: 100px;
+      height: 25px;
+      background: red;
+      position: absolute;
+      animation: mymove 5s infinite;
+      overflow: hidden;
+      margin-left: 4%;
+      z-index: -1;
+    }
+    .h {
+      position: absolute;
+      animation: mymovea 5s infinite;
+      z-index: -1;
+      margin-left: 4%;
+    }
+    .developer {
+      position: absolute;
+      animation: mymovedeveloper 5s infinite;
+      z-index: -1;
+      margin-left: 4%;
+    }
+    h1 {
+      position: relative;
+    }
+
+    @keyframes mymove {
+  0%   {top: 65px;}
+  25%  {top: 65px;}
+  50%  {top: 0px;}
+  75%  {top: 0px;}
+  100% {top: 65px;}
+}
+
+    @keyframes mymovea {
+      0%   {top: 200px;}
+      25%  {top: 200px;}
+      50%  {top: 65px;}
+      75%  {top: 100px;}
+      100% {top: 0px;}
+    }
+    
+    @keyframes mymovedeveloper {
+      0%   {top: 200px;}
+      25%  {top: 200px;}
+      50%  {top: 100px;}
+      75%  {top: 65px;}
+      100% {top: 0px;}
+    }
+    </style>
+</head>
+<body>
+
+<h1>The @keyframes Rule</h1>
+<div class="div">tello
+  <p class="heloo">heloo</p>
+  <p class="h">h</p>
+  <p class="developer">developer</p>
+</div>
+</body>
+
+</html>
